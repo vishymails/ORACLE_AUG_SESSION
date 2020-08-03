@@ -1,0 +1,19 @@
+[centosgroup]
+localhost ansible_connection=local
+centos1 
+centos2 ansible_connection=REST
+centos3:2222 ansible_connection=ssh
+centos[4:6]
+centserver[0:20].oracle.com
+
+[ubuntugroup]
+ubuntu[1:20] 
+192.168.1.[0:255]
+192.168.[4:7].[0:255]
+server1.oracle.com
+server[2:20].oracle.com
+
+
+[linux:children]
+centosgroup
+ubuntugroup

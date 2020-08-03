@@ -1,0 +1,9 @@
+[centosgroup]
+centos1 ansible_user=root
+centos2
+centos3:2222 ansible_user=root
+centos[4:6]
+
+[ubuntugroup]
+ubuntu[1:20] 
+

@@ -1,0 +1,9 @@
+[centosgroup]
+centos1 ansible_user=root
+centos2
+centos3 ansible_port=2222 ansible_user=root
+
+[ubuntugroup]
+ubuntu1
+ubuntu2 ansible_become=true ansible_become_pass=password
+ubuntu3
